@@ -1,0 +1,75 @@
+# Ignore everything by default — whitelist architecture files only
+*
+
+# === WHITELIST: Architecture files ===
+
+# Root config
+!.gitignore
+!CLAUDE.md
+!README.md
+!settings.json
+!setup-mcp-stack.sh
+!package.json
+
+# Agents
+!agents/
+!agents/*.md
+
+# Skills (directories + SKILL.md files)
+!skills/
+!skills/*/
+!skills/*/SKILL.md
+
+# Commands
+!commands/
+!commands/custom/
+!commands/custom/*.md
+
+# Hooks
+!hooks/
+!hooks/*.js
+!hooks/*.sh
+
+# References
+!references/
+!references/*.md
+
+# Templates
+!templates/
+!templates/*.md
+
+# Workflows
+!workflows/
+!workflows/*.md
+
+# === EXPLICITLY EXCLUDED (sensitive/generated) ===
+# These are covered by the top-level * but listed for clarity
+sessions/
+projects/
+todos/
+cache/
+statsig/
+telemetry/
+history.jsonl
+settings.local.json
+cognee-mcp/
+plugins/
+downloads/
+backups/
+debug/
+file-history/
+get-shit-done/
+shell-snapshots/
+session-env/
+ide/
+usage-data/
+plans/
+.anthropic/
+.DS_Store
+*.log
+*.docx
+~$*
+mcp-needs-auth-cache.json
+stats-cache.json
+gsd-file-manifest.json
+.mcp.json.disabled
